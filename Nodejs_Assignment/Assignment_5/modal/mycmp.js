@@ -4,10 +4,10 @@ const cmpSchema = mongoose.Schema({
 
     cmpname:String,
     cmpid:String,
-    prodid:String,
+    prodid:[{type:String}],
 });
 
-const cmpmodel = mongoose.model("assignment5",cmpSchema,"assignment5");
+const cmpmodel = mongoose.model("Company",cmpSchema,"Company");
 
 module.exports = cmpmodel;
 
